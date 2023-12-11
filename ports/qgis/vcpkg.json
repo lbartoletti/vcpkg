@@ -1,0 +1,53 @@
+{
+  "name": "qgis",
+  "version": "3.32.2",
+  "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).",
+  "homepage": "https://github.com/QGIS/QGIS",
+  "license": "GPL-2.0-or-later",
+  "supports": "!xbox",
+  "dependencies": [
+    "expat",
+    "hdf5",
+    "libxml2",
+    "libzip",
+    "zlib",
+    "libspatialite",
+    "gdal",
+    "opencl",
+    "exiv2",
+    "gsl",
+    "libpq",
+    "protobuf",
+    "proj",
+    "geos",
+    "qt5-base",
+    "qt5-location",
+    "qt5-tools",
+    "qt5-winextras",
+    "qwt",
+    "qca",
+    "qscintilla",
+    "qtkeychain",
+    "qtkeychain",
+    "python3",
+    "qt5-3d",
+    "qt5-declarative",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "zlib"
+  ],
+  "features": {
+    "server": {
+      "description": "Server support for QGIS",
+      "dependencies": [
+        "fastcgi"
+      ]
+    }
+  }
+}

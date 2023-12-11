@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7cc25897..368c436b 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -517,7 +517,7 @@ if(WITH_CORE)
+   # Password helper
+   find_package(QtKeychain REQUIRED)
+   # Master password hash and authentication encryption
+-  find_package(QCA REQUIRED)
++  find_package(QCA CONFIG REQUIRED)
+   # Check for runtime dependency of qca-ossl plugin
+   # REQUIRED if unit tests are to be run from build directory
+   if(NOT MSVC)
